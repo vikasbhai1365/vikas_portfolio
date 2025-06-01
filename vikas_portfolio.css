@@ -133,6 +133,9 @@ nav ul li a:focus {
     .hamburger {
         display: flex;
     }
+    #about img{
+        height:20%;
+    }
 }
 
 main {
