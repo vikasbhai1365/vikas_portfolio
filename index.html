@@ -1,292 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vikas Rawat | BCA Graduate & Web Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="vikas_portfolio.css"/>
-</head>
-
-<body>
-    <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Interactive Portfolio</title>
+    <link rel="stylesheet" href="my_portfolio.css"/>
+    
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">Vikas<span>Rawat</span></a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-        </div>
+      <div class="logo" aria-label="Portfolio logo">VIKAS RAWAT</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        role="button"
+        tabindex="0"
+      >
+        <span></span><span></span><span></span>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm <span>Vikas Rawat</span></h1>
-                    <h2>BCA Graduate & Web Developer</h2>
-                    <p>I create beautiful, functional websites and web applications. With a strong foundation in
-                        computer applications from Gujarat University and hands-on experience in modern web
-                        technologies, I bring ideas to life through code.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/vikasrawat1365/?__pwa=1" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                        alt="Developer working">
-                </div>
+    <main>
+      <section id="hero" aria-label="Introduction" tabindex="-1">
+        <h1>Hello, I'm Vikas</h1>
+        <p>
+          A passionate modern web developer creating engaging digital
+          experiences.
+        </p>
+        <div class="animated-text" aria-live="polite" aria-atomic="true"></div>
+        <button id="scrollAboutBtn" aria-label="Scroll to About section">
+          Discover More
+        </button>
+      </section>
+
+      <section id="about" aria-label="About Me" tabindex="-1">
+
+        <img
+          src="https://i.imgur.com/E2XDE0H.png"
+          alt="Your Name Profile Picture"
+        />
+        <div id="about-text">
+          <p>
+            Hi! I am a versatile web developer skilled in front-end and back-end
+            technologies. My expertise includes HTML, CSS, JavaScript,
+            Bootstrap, PHP, Python, Django, MySQL, React, Node.js, Express.js,
+            and PostgreSQL. I am also proficient in essential developer tools
+            such as VS Code, Git, GitHub, XAMPP, and more. I enjoy building
+            seamless, interactive, and performant web applications tailored to
+            users’ needs and business goals. Let’s create something great
+            together!
+          </p>
+          <div class="skills" aria-label="Technical skills">
+            <div class="skill" tabindex="0" aria-describedby="html-desc">
+              <h3>HTML5</h3>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="90"
+                aria-label="HTML5 skill 90 percent"
+              >
+                <div class="skill-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="skill-level" id="html-desc">90%</div>
             </div>
+            <div class="skill" tabindex="0" aria-describedby="css-desc">
+              <h3>CSS3 & Bootstrap</h3>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="88"
+                aria-label="CSS3 and Bootstrap skill 88 percent"
+              >
+                <div class="skill-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="skill-level" id="css-desc">88%</div>
+            </div>
+            <div class="skill" tabindex="0" aria-describedby="js-desc">
+              <h3>JavaScript & React</h3>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="82"
+                aria-label="JavaScript and React skill 82 percent"
+              >
+                <div class="skill-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="skill-level" id="js-desc">82%</div>
+            </div>
+            <div class="skill" tabindex="0" aria-describedby="node-desc">
+              <h3>Node.js & Express.js</h3>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="75"
+                aria-label="Node.js and Express.js skill 75 percent"
+              >
+                <div class="skill-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="skill-level" id="node-desc">75%</div>
+            </div>
+            <div class="skill" tabindex="0" aria-describedby="php-desc">
+              <h3>Python & Django</h3>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="70"
+                aria-label="PHP and Django skill 70 percent"
+              >
+                <div class="skill-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="skill-level" id="php-desc">70%</div>
+            </div>
+            <div class="skill" tabindex="0" aria-describedby="php-desc">
+              <h3>PHP</h3>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="70"
+                aria-label="PHP and Django skill 70 percent"
+              >
+                <div class="skill-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="skill-level" id="php-desc">70%</div>
+            </div>
+            <div class="skill" tabindex="0" aria-describedby="db-desc">
+              <h3>MySQL & PostgreSQL</h3>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="75"
+                aria-label="MySQL and PostgreSQL skill 75 percent"
+              >
+                <div class="skill-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="skill-level" id="db-desc">75%</div>
+            </div>
+            <div class="skill" tabindex="0" aria-describedby="tools-desc">
+              <h3>VS Code, Git, GitHub, XAMPP</h3>
+              <div
+                class="skill-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="85"
+                aria-label="Tools skill 85 percent"
+              >
+                <div class="skill-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="skill-level" id="tools-desc">85%</div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <p>Here's a little about my background, skills, and what I do</p>
+      <section id="projects" aria-label="Projects" tabindex="-1">
+        <h2>Projects</h2>
+        <div class="projects-container" aria-live="polite">
+          <article
+            class="project-card"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="proj1-details"
+            id="proj1"
+            role="button"
+          >
+            <h3>Dynamic Portfolio</h3>
+            <p>
+              A lively portfolio website with slick animations and
+              responsiveness, designed for maximum engagement.
+            </p>
+            <div class="project-details" id="proj1-details" hidden>
+              Built with modern CSS and JS animations and interactive
+              components. Fully mobile optimized and accessible.
             </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://i.imgur.com/E2XDE0H.png" alt="Vikas Rawat">
-                </div>
-                <div class="about-text">
-                    <h3>BCA Graduate from Gujarat University</h3>
-                    <p>I recently completed my Bachelor's in Computer Applications (BCA) from Gujarat University with a
-                        focus on web technologies. During my studies, I developed a passion for creating interactive and
-                        user-friendly web experiences.</p>
-                    <p>I have hands-on experience with modern web development frameworks and tools, and I'm constantly
-                        learning new technologies to enhance my skills.</p>
-
-                    <div class="skills">
-                        <h4>Technical Skills</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">PHP</span>
-                            <span class="skill-tag">Ajax</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">MySQL</span>
-
-
-                        </div>
-                    </div>
-                </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/yourname/portfolio"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub repository of portfolio"
+                >GitHub</a
+              >
+              <a href="#" aria-label="Live demo unavailable">Live Demo</a>
             </div>
+          </article>
+
+          <article
+            class="project-card"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="proj2-details"
+            id="proj2"
+            role="button"
+          >
+            <h3>E-Commerce Website</h3>
+            <p>
+              Shreeji Stationery website with fully functionality like user
+              authentication,order processing ,handle by admin and deliver by
+              the staff member with cash on delivery(COD) method.
+            </p>
+            <div class="project-details" id="proj2-details" hidden>
+              Developed with HTML5 ,CSS3 ,JS for fronted and Python, Django for
+              Backend and Mysql for database.
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/vikasbhai1365/shreeji_stationery"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub repository of ToDo app"
+                >GitHub</a
+              >
+              <a
+                href="https://mystationery.pythonanywhere.com/"
+                aria-label="Live demo unavailable"
+                >Live Demo</a
+              >
+            </div>
+          </article>
+
+          <!-- <article class="project-card" tabindex="0" aria-expanded="false" aria-controls="proj3-details" id="proj3" role="button">
+        <h3>Weather Insights</h3>
+        <p>A dynamic React app pulling live weather data with neat animations and beautiful background transitions.</p>
+        <div class="project-details" id="proj3-details" hidden>
+          Responsive design with theming and user-friendly data visualization components.
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-                <p>Here are some of the projects I've worked on during my studies and personal time</p>
-            </div>
-            <div class="projects-grid">
-                <!-- Project 1 - Sheeji Stationery -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                            alt="Sheeji Stationery Website">
-                    </div>
-                    <div class="project-info">
-                        <h3>Sheeji Stationery</h3>
-                        <p>A complete stationery management system with inventory tracking, order management, and
-                            customer portal.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Bootstrap</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://mystationery.pythonanywhere.com/"><i class="fas fa-external-link-alt"></i> Visit Site </a>
-                            <a href="https://github.com/vikasbhai1365/shreeji_stationery"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Feel free to contact me for opportunities, collaborations, or just to say hello!</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Let's Talk About Your Project</h3>
-                    <p>I'm currently looking for new opportunities in web development. Whether you have a question or
-                        just want to say hi, I'll get back to you as soon as possible!</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="#">vikasrawat2519@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <a href="#">+91 98765 43210</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Ahmedabad, Gujarat, India</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
+        <div class="project-links">
+          <a href="https://github.com/yourname/weather-app" target="_blank" rel="noopener" aria-label="GitHub repository of weather app">GitHub</a>
+          <a href="#" aria-label="Live demo unavailable">Live Demo</a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <a href="#" class="logo">Vikas<span>Rawat</span></a>
-
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/vikasrawat1365/?__pwa=1" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                </div>
-
-                <p class="copyright">© <span id="year"></span> Vikas Rawat. All rights reserved.</p>
-            </div>
+      </article> -->
         </div>
-    </footer>
+      </section>
+
+      <section id="contact" aria-label="Contact" tabindex="-1">
+        <h2>Contact</h2>
+        <div class="contact-details" aria-live="polite">
+          <div class="contact-item">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+              <path
+                d="M2 8.5v7c0 1.3 1.2 2.5 3.3 2.5h13.4c2.1 0 3.3-1.2 3.3-2.5v-7"
+              />
+            </svg>
+            <a
+              href="mailto:your.email@example.com"
+              aria-label="Send email to your.email@example.com"
+              tabindex="0"
+              >vikasrawat2519@gmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+              <path
+                d="M2 10c.8 0 1.5.7 1.5 1.5S2.8 13 2 13 0.5 12.3 0.5 11.5 1.2 10 2 10z"
+              />
+              <path d="M22 6c-.5 4.5-4.5 8.5-9 9" />
+            </svg>
+            <a
+              href="tel:+1234567890"
+              aria-label="Call +1 234 567 890"
+              tabindex="0"
+              >+91 9558119051</a
+            >
+          </div>
+          <div class="contact-item">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+              <path d="M20 2v20H4V2h16zm-4 16h-4v-6H8l4-5 4 5h-2v6z" />
+            </svg>
+            <a
+              href="https://www.linkedin.com/in/vikas-rawat-a60853270/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit my LinkedIn profile"
+              tabindex="0"
+              >linkedin.com/in/vikas-rawat</a
+            >
+          </div>
+          <div class="contact-item">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+              <path
+                d="M12 12c2 0 3.5-2 4-4-1 0-3 1.5-4 3-1-1-3-3-4-3 1 2 3 4 4 4zm6 6v-1c0-1-2-1-2-1s-2 0-2 1v1h4z"
+              />
+            </svg>
+            <a
+              href="https://github.com/vikasbhai1365"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit my GitHub profile"
+              tabindex="0"
+              >github.com/vikasbhai1365</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Vikas Rawat. All rights reserved.</footer>
 
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
+      // Hamburger toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
 
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navLinks.classList.contains('active')
-                ? '<i class="fas fa-times"></i>'
-                : '<i class="fas fa-bars"></i>';
+      hamburger.addEventListener("click", () => {
+        const expanded = hamburger.getAttribute("aria-expanded") === "true";
+        hamburger.setAttribute("aria-expanded", !expanded);
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("open");
+      });
+      hamburger.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          hamburger.click();
+        }
+      });
+
+      // Nav highlight on scroll
+      const sections = document.querySelectorAll("section");
+      const navItems = navLinks.querySelectorAll("a");
+      function activateNavLink() {
+        let scrollPos = window.scrollY + 80;
+        sections.forEach((section, index) => {
+          if (
+            scrollPos >= section.offsetTop &&
+            scrollPos < section.offsetTop + section.offsetHeight
+          ) {
+            navItems.forEach((i) => i.classList.remove("active"));
+            navItems[index].classList.add("active");
+          }
+        });
+      }
+      window.addEventListener("scroll", activateNavLink);
+
+      // Animated typing text
+      const animatedTextElem = document.querySelector(".animated-text");
+      const phrases = [
+        "Interactive Web Developer",
+        "UI/UX Innovator",
+        "React & JavaScript Specialist",
+        "Professional Problem Solver",
+        "Creative Technologist",
+      ];
+      let phraseIndex = 0,
+        letterIndex = 0,
+        deleting = false,
+        currentText = "";
+
+      function typeText() {
+        if (!deleting && letterIndex <= phrases[phraseIndex].length) {
+          currentText = phrases[phraseIndex].substring(0, letterIndex);
+          animatedTextElem.textContent = currentText;
+          letterIndex++;
+          setTimeout(typeText, 150);
+        } else if (deleting && letterIndex >= 0) {
+          currentText = phrases[phraseIndex].substring(0, letterIndex);
+          animatedTextElem.textContent = currentText;
+          letterIndex--;
+          setTimeout(typeText, 80);
+        } else {
+          deleting = !deleting;
+          if (!deleting) phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(typeText, 1200);
+        }
+      }
+      typeText();
+
+      // Scroll to about on button
+      document
+        .getElementById("scrollAboutBtn")
+        .addEventListener("click", () => {
+          const about = document.getElementById("about");
+          about.focus();
+          about.scrollIntoView({ behavior: "smooth" });
         });
 
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
+      // Animate skill bars when visible
+      const skillFills = document.querySelectorAll(".skill-bar-fill");
+      const skillPercents = [90, 88, 82, 77, 75, 70, 85];
+      function animateSkills() {
+        skillFills.forEach((fill, index) => {
+          const rect = fill.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 60) {
+            fill.style.width = skillPercents[index] + "%";
+          }
         });
+      }
+      window.addEventListener("scroll", animateSkills);
+      window.addEventListener("load", animateSkills);
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+      // Reveal About text and heading on scroll
+      const aboutSection = document.getElementById("about");
+      const aboutText = document.getElementById("about-text");
+      function revealAbout() {
+        const rect = aboutSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.85) {
+          aboutText.classList.add("visible");
+          window.removeEventListener("scroll", revealAbout);
+        }
+      }
+      window.addEventListener("scroll", revealAbout);
+      window.addEventListener("load", revealAbout);
 
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+      // Project card expansion toggle
+      const projects = document.querySelectorAll(".project-card");
+      projects.forEach((card) => {
+        card.addEventListener("click", () => toggleProject(card));
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggleProject(card);
+          }
         });
-
-        // Update copyright year
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Add scroll animation
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY;
-
-            // You can add more scroll effects here
-            if (scrollPosition > 100) {
-                document.querySelector('header').style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                document.querySelector('header').style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            }
-        });
+      });
+      function toggleProject(card) {
+        const expanded = card.classList.toggle("expanded");
+        card.setAttribute("aria-expanded", expanded);
+        const details = card.querySelector(".project-details");
+        details.hidden = !expanded;
+      }
     </script>
-</body>
-<!-- my image link : https://imgur.com/a/gnntsjs -->
-
+  </body>
 </html>
